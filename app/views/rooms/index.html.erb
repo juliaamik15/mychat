@@ -1,0 +1,3 @@
+<%= @rooms.each do |r| %>
+	<div> <%= r.topic %> : <%= link_to 'here', room_path(r) %> </div>
+<% end %>

@@ -1,0 +1,9 @@
+<h1> My chat room</h1>
+<%= form_for :room, url: rooms_path do |f| %> 
+	<p>
+		<%= f.label :topic %> <%= f.text_field :topic %>
+	</p>
+	<p> 
+		<%= f.submit %>
+	</p>
+<% end %>
